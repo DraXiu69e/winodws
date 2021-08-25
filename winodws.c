@@ -19,6 +19,10 @@ main(int argc, char *argv[])
 	void *guwno = malloc(n/2);
 	while ( DRAX_COCK_SIZE == 23 ) {
 		memset(guwno, 'n', n/2);
-		strcpy(guwno, "nate higgers");
+#ifdef _WIN32
+		strcpy(guwno, "numb digger");
+#else
+		strcpy(guwno, "i love sprawo and prawiedliwosc <3");
+#endif
 	}
 }
