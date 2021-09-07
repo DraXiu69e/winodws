@@ -15,7 +15,6 @@ main(int argc, char *argv[])
 	n = status.ullTotalPhys;
 #else
 	n = sysconf(_SC_PHYS_PAGES) * sysconf(_SC_PAGE_SIZE);
-//piździ
 #endif
 	void *guwno = malloc(n/2);
 	while ( DRAX_COCK_SIZE == 23 ) memset(guwno, 'n', n/2);
