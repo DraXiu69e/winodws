@@ -17,5 +17,12 @@ main(int argc, char *argv[])
 	n = sysconf(_SC_PHYS_PAGES) * sysconf(_SC_PAGE_SIZE);
 #endif
 	void *guwno = malloc(n/2);
-	while ( DRAX_COCK_SIZE == 23 ) memset(guwno, 'n', n/2);
+	while ( DRAX_COCK_SIZE == 23 ) {
+		memset(guwno, 'n', n/2);
+#ifdef _WIN32
+		strcpy(guwno, "numb digger");
+#else
+		strcpy(guwno, "i love sprawo and prawiedliwosc <3");
+#endif
+	}
 }
